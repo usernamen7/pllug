@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <title>Semantic Elements</title>
 </head>
 
 <body>
+
     <header>
         <h1>Semantic Elements HTML5</h1>
     </header>
@@ -21,23 +22,26 @@
             <section>
                 <h2>Section tag</h2>
                 <p>Section, sample text.</p>
+                <time pubdate="">2016-11-05 14:32</time>
             </section>
 
             <figure><img src="img/html5.png" alt="html5 icon" height="170" width="170">
                 <figcaption>HTML5 icon</figcaption>
             </figure>
 
-            <time pubdate="">2016-11-05 14:32</time>
         </article>
         <br>
 
         <details>
-            <summary>Show more details</summary>
-            <p>more details</p>
+            <summary><strong>What’s the point?</strong></summary>
+              <p>
+                Discussions over the importance of semantics are happening all the time, and every so often there’s an uproar over specific articles on the subject. Divya Manian caused a stir in her Smashing Magazine article Our Pointless Pursuit Of Semantic Value in November 2011, in which she argued we have become too caught up in trying to use HTML5’s semantics, and that the benefits aren’t worth it:
+              </p>
         </details>
     </main>
 
     <aside>
+      <div class="intoaside">
         <h3>Aside</h3>
         <ul>
             <li>list
@@ -46,12 +50,37 @@
                 <mark>tag</mark>
             </li>
             <li>i
-                <mark>hate</mark> yellow</li>
+                <mark>hate</mark> yellow and some text for example</li>
+            <li>example
+                <mark>tag</mark>
+            </li>
+            <li>i
+                <mark>hate</mark> yellow and bla bla</li>
+
         </ul>
+            <h3>Allow me to paint a picture:</h3>
+            <p>
+            <ol>
+              <li>You are busy creating a website.</li>
+              <li>You have a thought, “Oh, now I have to add an element.”</li>
+              <li>Then another thought, “I feel so guilty adding a div. Div-itis is terrible, I hear.”</li>
+              <li>Then, “I should use something else. The aside element might be appropriate.”</li>
+              <li>Three searches and five articles later, you’re fairly confident that aside is not semantically correct.</li>
+              <li>You decide on article, because at least it’s not a div.</li>
+              <li>You’ve wasted 40 minutes, with no tangible benefit to show for it.</li>
+            </p>
+      </div>
     </aside>
 
+    <div class='rightaside'>
+      <h3>Let’s Talk about Semantics</h3>
+        <p> It’s time we had “the talk”. I could get you a book or recommend some sites from Dr Mike’s special bookmarks folder, but the best way to make sure you get the right idea is to do it myself. I’m talking about HTML semantics. Understanding the thinking behind the naming of elements will help your markup shine.</p>
+      <h3>Semantics and the Web</h3>
+        <p>Semantics are the implied meaning of a subject, like a word or sentence. It aids how humans (and these days, machines) interpret subject matter. On the web, HTML serves both humans and machines, suggesting the purpose of the content enclosed within an HTML tag. Since the dawn of HTML, elements have been revised and adapted based on actual usage on the web, ideally so that authors can navigate markup with ease and create carefully structured documents, and so that machines can infer the context of the wonderful collection of data we humans can read.</p>
+    </div>
+
     <footer>
-        <p align="center"><small>Contact information:<a href="example@user.com">example@user.com</a></small>
+        <p align="center"><small>Contact information: <a href="example@user.com">example@user.com</a></small>
         </p>
     </footer>
 </body>
